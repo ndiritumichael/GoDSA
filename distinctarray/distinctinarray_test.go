@@ -2,11 +2,6 @@ package distinctarray
 
 import "testing"
 
-type testvalues struct {
-	arr  []int
-	soln int
-}
-
 func TestDistinctArray(t *testing.T) {
 
 	testCases := []struct {
