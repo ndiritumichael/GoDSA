@@ -43,14 +43,12 @@ func twoSum(nums []int, target int) []int {
 	for key, number := range nums {
 
 		comp, ok := mapNum[number]
-
 		if ok {
 			return []int{
 				comp, key,
 			}
 		} else {
 			mapNum[target-number] = key
-
 		}
 
 	}
