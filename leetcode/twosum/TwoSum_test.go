@@ -1,6 +1,7 @@
 package twosum
 
 import (
+	"fmt"
 	"github.com/stretchr/testify/assert"
 	"testing"
 )
@@ -28,4 +29,22 @@ func TestTwoSum3(t *testing.T) {
 	expected := []int{0, 1}
 	result := twoSum(nums, target)
 	assert.Equal(t, expected, result, "Expected %v, but got %v", expected, result)
+}
+
+func TestTwoSum(t *testing.T) {
+
+	arr := [...]int{2, 3, 4, 5, 6, 7}
+	mikes := details{
+		name: "mike",
+		age:  25,
+	}
+	println("Print using print")
+	println(mikes)
+	print("Print using fmt")
+	fmt.Println(arr)
+}
+
+type details struct {
+	name string
+	age  int
 }
