@@ -12,3 +12,13 @@ func ReverseString(s string) string {
 
 	return newString
 }
+func ReverseString1(s string) string {
+	reversed := ""
+	var length = len(s)
+	for i := 0; i < length; i++ {
+		reversed += string(s[length-1-i])
+
+	}
+	return reversed
+
+}
